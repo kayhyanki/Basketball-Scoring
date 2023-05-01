@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Basketball Scoreboard</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <main class="scoreboard">
+            <section id="time"></section>
+            <section class="scores">
+                <div class="home">
+                    <h1 id="home-header">Team1</h1>
+
+                    <div id="home-score">
+                        <p class="pts" id="home-pts">0</p>
+                        <p class="pts-shadow">000</p>
+                    </div>
+                    <div class="buttons">
+                        <button id="home-one" onclick="homePoints(1)">+1</button>
+                        <button id="home-two" onclick="homePoints(2)">+2</button>
+                        <button id="home-three" onclick="homePoints(3)">+3</button>
+                    </div>
+                </div>
+                <div class="quarter-div">
+                    <h3>Quarter</h3>
+                    <div id="quarter">1</div>
+                </div>
+                <div class="guest">
+                    <h1 id="guest-header">Team2</h1>
+                    
+                    <div id="guest-score"> 
+                        <p class="pts" id="guest-pts">0</p>
+                        <p class="pts-shadow">000</p>
+                    </div>
+                    <div class="buttons">
+                        <button id="guest-one" onclick="guestPoints(1)">+1</button>
+                        <button id="guest-two" onclick="guestPoints(2)">+2</button>
+                        <button id="guest-three" onclick="guestPoints(3)">+3</button>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <button id="new-game" onclick="newGame()">New game</button>
+                <button id="pause-game" onclick="pauseGame()">Pause game</button>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
